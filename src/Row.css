@@ -1,0 +1,35 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.row__posters{
+    display: flex;                 /*It will display the posters horizontally like a card*/
+    overflow-y: hidden;            /* it adds the scroll feature in the desired thing */
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{   /* It tells all the browser to hide the scrollbar*/
+    display: none;
+}
+
+.row__poster{
+    object-fit: contain;                /*It will change the size of contents according to change in size of tab*/
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;        /*It will add a delay of 450ms on loading the page*/
+}
+
+.row__poster:hover{
+    transform: scale(1.08);       /* It transforms the size on hovering over the image i.e scale up*/
+}
+
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+}
